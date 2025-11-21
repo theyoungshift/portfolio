@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Young Shift | Shift Your Mind</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="youngshift.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="content fade-up">
+      <h5 class="mini-title">YOUNG SHIFT</h5>
+      <h1>Shift Your <span>Mind</span>.<br>Shape Your <span>Future</span>.</h1>
+      <p>Because clarity isn't something you find — it's something you create.</p>
+      <div class="buttons">
+        <a href="#" class="btn secondary">🤝 Join the Shift</a>
+        <a href="thankyou.html" class="btn secondary">⬇️ Download Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about fade-up">
+    <div class="text">
+      <h5>MEET THE MIND BEHIND YOUNG SHIFT</h5>
+      <h2>From Confusion to Clarity</h2>
+      <p>Hey, I'm <strong>Lakhan Saini</strong>, founder of Young Shift.</p>
+      <p>I'm a nursing student who once spent two years preparing for NEET, chasing a dream that didn't turn out as planned. But in that chaos, I discovered something bigger — the power of clarity, mindset, and purpose.</p>
+      <p>I realized that so many young people feel lost, confused, or stuck — not because they lack talent, but because no one teaches them how to think, how to focus, and how to grow from within.</p>
+      <p><strong>That's why I started Young Shift — a space for people like you, who want to stop drifting and start shifting.</strong></p>
+      <p>Through stories, ideas, and reflections, I help you see life from a new lens — so you can build habits, identity, and purpose that truly align with who you are.</p>
+    </div>
+
+    <div class="image-card">
+      <div class="circle">
+        <img src="logo.png" alt="ys">
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Section -->
+<section class="join">
+  <div class="join-container">
+    <div class="icon">👥</div>
+    <h2 class="gradient-text">Join the Movement</h2>
+    <p class="quote"><em>"The Shift starts within."</em></p>
+    <p class="desc">
+      The world doesn't change when you follow trends.<br>
+      It changes when you shift your thinking.
+    </p>
+    <p class="small">
+      Join our community of young minds choosing clarity over confusion — one shift at a time.<br>
+      Subscribe for weekly insights and join the conversation.
+    </p>
+
+    <!-- REAL GOOGLE FORM -->
+    <form class="form" id="shiftForm"
+  action="https://docs.google.com/forms/d/e/1FAIpQLSckwCum3hWJqixSlQNz7wDvpKfn254ZDQ_B97PVypFT9ROBiw/formResponse"
+  method="POST"
+  target="hidden_iframe"
+  onsubmit="submitted=true;">
+
+  <input 
+    type="email" 
+    name="entry.310077205" 
+    placeholder="Enter your email" 
+    required />
+
+  <button type="submit" class="join-btn">Join Now ✈️</button>
+</form>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+<script>
+  var submitted = false;
+
+  document.getElementById("hidden_iframe").onload = function () {
+    if (submitted) {
+      window.location.href = "thankyou.html";
+    }
+  }
+</script>
+
+
+    <div class="social">
+      <p>JOIN THE CONVERSATION</p>
+      <div class="icons">
+        <a href="https://www.youtube.com/@theyoungshift" class="circle">YT</a>
+        <a href="https://www.instagram.com/the.youngshift/" class="circle">IG</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
